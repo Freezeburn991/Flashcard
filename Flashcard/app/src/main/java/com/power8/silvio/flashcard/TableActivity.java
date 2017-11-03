@@ -67,6 +67,7 @@ public class TableActivity extends AppCompatActivity {
                     String[] colText = {id + "", english_word, deutsch_word};
                     for(String text:colText) {
                         TextView tv = new TextView(this);
+                        String pusikaric;
                         tv.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.WRAP_CONTENT,
                                 TableRow.LayoutParams.WRAP_CONTENT));
                         tv.setGravity(Gravity.CENTER);

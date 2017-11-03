@@ -35,7 +35,8 @@ public class DatabaseHelper extends SQLiteOpenHelper{
         onCreate(db);
     }
 
-    public void insertData(String english_word, String deutsch_word){
+    public boolean insertData(String english_word, String deutsch_word){
+
         // Open the database for writing
         SQLiteDatabase db = this.getWritableDatabase();
         // Start the transaction
@@ -51,13 +52,23 @@ public class DatabaseHelper extends SQLiteOpenHelper{
             Log.i("Insert", i + "");
             // Insert into database successfully
             db.setTransactionSuccessful();
+            if(i == -1){
+                return false;
+            }
+            else{
+                return true;
+            }
+
         }catch(SQLiteException e){
             e.printStackTrace();
+            return false;
         }
 
         finally {
             db.endTransaction();
             db.close();
         }
+
+
     }
 }

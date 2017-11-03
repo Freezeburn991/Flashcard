@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Flashcard</string>
+    <string name="addButton">Add a new flashcard</string>
+    <string name="addToDatabase">Add to database</string>
+    <string name="showAllData">Show all</string>
+    <string name="englishText">English word</string>
+    <string name="deutschText">Deutsch word</string>
+</resources>

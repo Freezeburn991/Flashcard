@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/englishText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/englishText"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp" />
+
+    <EditText
+        android:id="@+id/deutschText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/deutschText"
+        android:layout_below="@+id/englishText"
+        android:layout_alignLeft="@+id/englishText"
+        android:layout_alignStart="@+id/englishText"
+        android:layout_marginTop="24dp" />
+
+    <Button
+        android:id="@+id/addToDatabase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/addToDatabase"
+        android:layout_below="@+id/deutschText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="44dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="50dp" />
+
+    <Button
+        android:id="@+id/showAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/showAllData"
+        android:layout_alignBaseline="@+id/addToDatabase"
+        android:layout_alignBottom="@+id/addToDatabase"
+        android:layout_alignRight="@+id/deutschText"
+        android:layout_alignEnd="@+id/deutschText" />
+</RelativeLayout>
